@@ -133,11 +133,122 @@ header{
 .secound{
   padding-top: 100px;
 }
+/* ///////////TEAM START///////// */
+.team{
+  width: 100%;
+  /* background: rgb(209,233,246);
+  background: linear-gradient(100deg, rgba(209,233,246,1) 0%, rgba(246,234,203,1) 48%, rgba(238,202,213,1) 96%); */
+
+  /* background-image: url(./Image/07.jpg);
+  background-repeat: no-repeat;
+  background-size: contain; */
+  background: rgb(86,107,128);
+background: linear-gradient(180deg, rgba(86,107,128,1) 0%, rgba(203,138,62,1) 91%, rgba(249,254,91,1) 100%);
+padding-bottom: 100px;
+}
+.main_team{
+  width: 100%;
+}
+.main_team h1{
+  font-size: 50px;
+  text-align: center;
+  padding: 40px 0;
+  font-family: var(--mons);
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.main_team h1:hover{
+  scale: 1.2;
+  transform: translateY(-5px);
+}
+.team_cards{
+  width: 100%;
+  display: flex;
+  gap: 40px ;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.team_cards .card{
+  width: 25%;
+  height: 450px;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.19);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.4px);
+  -webkit-backdrop-filter: blur(4.4px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.team_cards .card .img{
+  width: 100%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.team_cards .card .img img{
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+}
+.team_cards .card h3{
+  text-align: center;
+  font-family: var(--suse);
+  font-size: 20px;
+  color: #fff;
+}
+.team_cards .card h4{
+  padding-left: 10px;
+  font-family: var(--suse);
+  font-size: 18px;
+  color: #fff;
+  font-weight: 800;
+}
+.team_cards .card .live{
+  margin-top: 10px;
+}
+.edu_result{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  gap: 20px;
+}
+.edures{
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+
+}
+.edures img{
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+.efat_btn{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.cards_btn{
+  width: 80px;
+  height: 30px;
+  background-color: var(--sky);
+  border-radius: 8px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--popins);
+  cursor: pointer;
+}
 
 /* ////////////FOOTER START//////// */
 footer{
   width:  100%;
-  height: 400px;
+  height: 200px;
   background-color: #1E201E;
 }
 
@@ -262,5 +373,24 @@ footer{
     flex-direction: column;
     gap: 20px;
   }
- 
+
+  /* //////////TEAM START///////// */
+
+  .team_cards{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .team_cards .card{
+    width: 80%;
+    height: 450px;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.19);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.4px);
+    -webkit-backdrop-filter: blur(4.4px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
 }
