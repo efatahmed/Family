@@ -393,4 +393,13 @@ footer{
     -webkit-backdrop-filter: blur(4.4px);
     border: 1px solid rgba(255, 255, 255, 0.1);
   }
+  .main_team h1{
+    font-size: 40px;
+    text-align: center;
+    padding: 40px 0;
+    font-family: var(--mons);
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+  }
 }
