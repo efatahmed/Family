@@ -614,6 +614,9 @@ footer{
     align-items: center;
     height: 100%;
   }
+  .efat_logo img{
+    width: 70%;
+  }
   .efat_menu{
     width: 80%;
     height: 100%;
@@ -690,8 +693,8 @@ footer{
     background-color: #24263B;
   }
   .efat_home_mb_img{
-    width: 90%;
-    height: 400px;
+    width: 75%;
+    height: 325px;
     margin: 0 auto;
   }
   .efat_home_mb_img img{
