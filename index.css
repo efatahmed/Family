@@ -8,12 +8,15 @@
   --open-sans:"Open Sans", sans-serif;
   --suse:"SUSE", sans-serif;
   --mons:"Montserrat", sans-serif;
+  --outfit: "Outfit", sans-serif;
+  --public:"Public Sans", sans-serif;
   --sky:#D1E9F6;
   --color-2: #F6EACB;
   --color-3: #F1D3CE;
   --color-4: #EECAD5;
   --black: #1E201E;
   --black-2: #3C3D37;
+  --dark_blue: #1F2235;
 }
 ul, 
 li, a{
@@ -23,6 +26,9 @@ li, a{
 .container{
   width: 90%;
   margin: 0 auto;
+}
+.efat_home_mb{
+  display: none;
 }
 /* /////////////////HEADER START/////// */
 header{
@@ -232,7 +238,7 @@ padding-bottom: 100px;
   justify-content: center;
   align-items: flex-end;
 }
-.cards_btn{
+.cards_btn a{
   width: 80px;
   height: 30px;
   background-color: var(--sky);
@@ -245,13 +251,191 @@ padding-bottom: 100px;
   cursor: pointer;
 }
 
+
 /* ////////////FOOTER START//////// */
 footer{
   width:  100%;
   height: 200px;
   background-color: #1E201E;
 }
+/* /////////EFAT HOME PAGE///////// */
+#efat_header{
+  width: 100%;
+  height: 90px;
+  background-color: var(--dark_blue);
+}
+.main_efat_profile{
+  width:  100%;
+  height: 100px;
+  background-color: var(--dark_blue);
+  display: flex;
+}
+.efat_logo{
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.efat_menu{
+  width: 60%;
+  height: 100%;
+}
+.efat_menu ul{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.efat_menu ul li{
+  padding: 30px 10px;
+}
+.efat_menu ul li a{
+  font-family: var(--outfit);
+  color: #fff;
+  font-size: 18px;
+  transition: 0.3s;
+  font-weight: 800;
+}
+.efat_menu ul li .active{
+  color: #FFB400 !important;
+}
+.efat_menu ul li a:hover{
+  color: #FFB400;
+}
+.efat_btn{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.efat_btn button{
+  width: 70%;
+  height: 50px;
+  border: none;
+  background-color: #FFB400;
+  border-radius: 8px;
+  font-family: var(--public);
+  color: #000000;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.3s;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.efat_btn button:hover{
+  background-color: transparent;
+  border: 2px solid #FFB400;
+  color: #FFB400;
+}
 
+/* //////////EFAT HOME///////// */
+.efat_home{
+  width: 100%;
+  height: 800px;
+  background-color: var(--dark_blue);
+  position: relative;
+}
+.main_efat_home{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.efat_text{
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction:  column;
+  position: relative;
+  top: 200px;
+  left: 0;
+  z-index: 1111;
+}
+.efat_img{
+  width: 20%;
+  height: 100%;
+}
+.efat_img img{
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 700px;
+}
+.efat_text p{
+  color: #fff;
+  letter-spacing: 0.15em;
+  font-family: var(--public);
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 1.5em;
+  text-transform: capitalize;
+  text-align: left;
+}
+.efat_text h1{
+  font-size: 4em;
+  color: #fff;
+  margin-bottom: 15px;
+  font-family: var(--outfit);
+  font-weight: 600;
+  line-height: 1.3;
+}
+.efat_text h1 span{
+  color: #FFB400;
+}
+.efat_text .three{
+  font-size: 16px;
+  color: #fff;
+  font-family: var(--public);
+  font-weight: 500;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+.home_btn{
+  width: 50%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.home_btn .hireme{
+  padding: 15px 25px;
+  border: none;
+  background-color: #FFB400;
+  border-radius: 8px;
+  font-family: var(--public);
+  color: #000000;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.3s;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.home_btn .hireme:hover{
+  background-color: transparent;
+  border: 2px solid #FFB400;
+  color: #FFB400;
+}
+.home_btn .icon{
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  background-color: #24263B;
+  font-size: 16px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 24px 0px #0F10186B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.home_btn .icon:hover{
+  background-color: #FFB400;
+  color: #000;
+}
 @media all and  (max-width: 600px) {
    header{
     width: 100%;
@@ -402,5 +586,167 @@ footer{
     color: #fff;
     cursor: pointer;
     transition: 0.3s;
+  }
+  /* EFAT HOME */
+  #efat_header{
+    width: 100%;
+    height: 90px;
+    background-color: var(--dark_blue);
+  }
+  .main_efat_profile{
+    width:  100%;
+    height: 90px;
+    background-color: var(--dark_blue);
+    display: flex;
+  }
+  .efat_logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .efat_menu{
+    width: 80%;
+    height: 100%;
+  }
+  .efat_btn{
+    display: none;
+  }
+  .efat_btn button{
+    display: none;
+  }
+  .efat_menu ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .efat_menu ul li{
+    padding: 5px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .efat_menu ul li a{
+    font-family: var(--outfit);
+    color: #fff;
+    font-size: 8px;
+    transition: 0.3s;
+    font-weight: 800;
+  }
+  .efat_home{
+    width: 100%;
+    height: 600px;
+    background-color: var(--dark_blue);
+    display: none;
+  }
+  .main_efat_home{
+    width: 100%;
+    height: 100%;
+  }
+  .efat_text{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction:  column;
+  
+  }
+  .efat_img{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .efat_img img{
+    width: 80%;
+    height: 60%;
+  }
+  .efat_text p{
+    color: #fff;
+    letter-spacing: 0.15em;
+    font-family: var(--public);
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 1.5em;
+    text-transform: capitalize;
+    text-align: left;
+  }
+  .efat_home_mb{
+    width: 100%;
+    display: inline-block;
+
+    background-color: #24263B;
+  }
+  .efat_home_mb_img{
+    width: 90%;
+    height: 400px;
+    margin: 0 auto;
+  }
+  .efat_home_mb_img img{
+    width: 100%;
+    height: 100%;
+  }
+  .efat_home_mb_text{
+    width: 80%;
+    padding-top: 50px;
+    margin: 0 auto;
+  }
+  .efat_home_mb_text p{
+    font-size: 12px;
+    color: #fff;
+    letter-spacing: 0.15em;
+    font-family: var(--public);
+    font-weight: 900;
+    line-height: 1.5em;
+    text-transform: capitalize;
+  }
+  .efat_home_mb_text h1{
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 15px;
+    font-family: var(--outfit);
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  .efat_home_mb_text h1 span{
+    color: #FFB400;
+  }
+  
+ .efat_home_mb_text .three{
+    font-size: 12px;
+    color: #fff;
+    font-family: var(--public);
+    font-weight: 500;
+    line-height: 18px;
+    margin-bottom: 30px;
+  }
+  .efat_home_mb_text .home_btn{
+    width: 90%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .efat_home_mb_text .home_btn .hireme{
+    padding: 10px 20px;
+    border: none;
+    background-color: #FFB400;
+    border-radius: 8px;
+    font-family: var(--public);
+    color: #000000;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .efat_home_mb_text .home_btn .hireme:hover{
+    background-color: transparent;
+    border: 2px solid #FFB400;
+    color: #FFB400;
   }
 }
