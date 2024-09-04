@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body{
-  overflow: hidden;
+  overflow-x: hidden;
 }
 :root{
   --popins: "Poppins", sans-serif;
@@ -540,6 +540,24 @@ footer{
 }
 .efat_about_img{
   width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img_inside{
+  width: 55%;
+  height: 60%;
+  background-color: var(--dark_blue);
+  position: relative;
+  border-radius: 8px;
+}
+.img_inside img{
+  position: absolute;
+  right: -24px;
+  top: 35px;
+  width: 100%;
+  height: 90%;
+  border-radius: 8px;
 }
 @media all and  (max-width: 600px) {
    header{
